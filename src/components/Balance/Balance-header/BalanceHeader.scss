@@ -1,0 +1,56 @@
+#BalanceHeader{
+  background: #00292F;
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  padding: 26px 34px 17px;
+  font-size: 40px;
+  font-family: BebasNeue;
+  line-height: 42px;
+  .header-title{
+    margin-right: 25px;
+    @media(max-width: 575px){
+      width: 100%;
+      margin-bottom: 14px;
+      font-size: 36px;
+    }
+  }
+  .header-amount{
+    margin-right: 20px;
+    .sign{
+      font-size: 32px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .amount-after{
+      color: #667F82;
+      font-size: 28px
+    }
+    @media(max-width: 575px){
+      .sign{
+        margin-right: 5px;
+      }
+    }
+  }
+  .header-deposit{
+    position: relative;
+    height: 40px;
+    .deposit-btn{
+      //width: 138px;
+      font-family: Roboto, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      background: #08979C;
+      border-radius: 8px;
+      border: 1px solid #08979C;
+      padding: 3px 10px;
+      vertical-align: middle;
+      border: 0;
+      height: 30px;
+      @media(max-width: 575px){
+        font-size: 14px;
+      }
+    }
+  }
+}

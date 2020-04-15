@@ -1,0 +1,57 @@
+#App{
+  //TODO: Fix mobile devices view below
+  height: 100vh;
+  font-family: Roboto, sans-serif;
+  #Layout{
+    background: #00181D;
+    height: 100%;
+    #Menu{
+      background: #006D75;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+      .ant-menu{
+        background: #006D75;
+        color: #B5F5EC;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 22px;
+        border: 0;
+        .ant-menu-sub{
+          background: #00474F
+        }
+        .ant-menu-item,.ant-menu-submenu{
+          //background: #006D75;
+          margin: 0;
+          padding: 0 25px;
+          width: 100%;
+          a{
+            color: #B5F5EC;
+          }
+          &:hover{
+            color: #fff;
+            a{
+              color: #fff;
+            }
+          }
+        }
+        .ant-menu-submenu{
+          padding: 0;
+        }
+        .ant-menu-submenu-title{
+          color: #B5F5EC;
+          .ant-menu-submenu-arrow{
+            &:before,&:after{
+              background: #B5F5EC;
+            }
+          }
+        }
+        .ant-menu-item-selected{
+          background-color: #13C2C2;
+          color: #fff;
+          &:after{
+            border-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

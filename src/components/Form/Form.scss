@@ -1,0 +1,179 @@
+#My-info{
+  .info-title{
+    background: #00292F;
+    color: #fff;
+    padding: 26px 34px 17px;
+    font-size: 40px;
+    font-family: BebasNeue;
+    line-height: 42px;
+  }
+  .info-main{
+    background-color: #00181D;
+    height: 100%;
+    .avatar-wrapper{
+      background-image: url(../../assets/bg/Info-bg.svg);
+      background-repeat: no-repeat;
+      background-position: 20px 10px;
+      display: flex;
+      @media(max-width: 575px){
+        background-image: url(../../assets/bg/info-bg_small.svg);
+        background-position: 9px 10px;
+        /*background-size: 55%;*/
+      }
+
+      .avatar-bg{
+        padding: 10px 20px;
+        position: absolute;
+      }
+      .avatar-uploader{
+        padding: 40px 20px 40px 45px;
+        width: unset;
+        @media(max-width: 575px){
+          padding: 20px 15px 45px;
+        }
+        .ant-upload{
+          width: 130px;
+          height: 130px;
+          background: #00474F;
+          border-radius: 18px;
+          border: 0;
+          margin: 0;
+          transition: .3s;
+          font-weight: bold;
+          font-size: 48px;
+          line-height: 24px;
+          color: #13C2C2;
+          @media(max-width: 575px){
+            width: 92px;
+            height: 92px;
+          }
+          &:hover{
+            box-shadow: 0px 5px 30px rgba(19, 194, 194, 0.5);
+          }
+        }
+      }
+      .uploader-desc{
+        padding: 40px 15px 0 0;
+        .avatar-title{
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 28px;
+          color: #fff;
+          margin-bottom: 2px;
+        }
+        .warning{
+          font-size: 16px;
+          line-height: 24px;
+          color: #fff;
+          opacity: 0.6;
+          margin-bottom: 16px;
+        }
+        .download{
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 28px;
+          color: #13C2C2;
+          padding: 0;
+        }
+        .file-name{
+          font-size: 16px;
+          line-height: 24px;
+          color: #FFFFFF;
+          opacity: 0.6;
+        }
+      }
+    }
+    .form-container{
+      padding: 47px 47px 78px;
+      max-width: 716px;
+      @media (max-width: 575px){
+        padding: 53px 15px 58px;
+      }
+      .input-wrapper{
+        margin-bottom: 33px;
+        .input-title{
+          display: block;
+          margin-bottom: 6px;
+          line-height: 28px;
+          font-size: 20px;
+          font-weight: 500;
+          color: #fff;
+          @media(max-width: 575px){
+            font-size: 14px;
+            margin-bottom: 3px;
+            line-height: 22px;
+          }
+        }
+        .ant-input, .ant-input-password{
+          padding: 11px 15px 5px;
+          max-width: 716px;
+          font-size: 22px;
+          line-height: 36px;
+          color: #fff;
+          border: 4px solid #13C2C2;
+          border-radius: 10px;
+          background-color: transparent;
+          caret-color: #13C2C2;
+          @media(max-width: 575px){
+            font-size: 16px;
+          }
+          &::placeholder{
+            /*color: #33464A;*/
+            color: #fff;
+            opacity: 0.2;
+            text-transform: uppercase;
+          }
+         &:focus{
+            box-shadow: 0px 4px 60px rgba(19, 194, 194, 0.5);
+            border-right-width: 4px;
+            background-color: #00474F;
+          }
+        }
+
+        .invalid{
+          border-color: red;
+          &:focus{
+            border-color: red;
+          }
+        }
+
+        .ant-input-password{
+          .anticon{
+            color: #fff;
+          }
+          .ant-input{
+            border: 0;
+            padding: 0;
+          }
+        }
+        .ant-input-affix-wrapper-focused{
+          box-shadow: 0px 4px 60px rgba(19, 194, 194, 0.5);
+          border-right-width: 4px;
+          background-color: #00474F;
+          .ant-input{
+            box-shadow: none;
+          }
+        }
+      }
+      .input-group-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .input-wrapper{
+          max-width: 48%;
+          min-width: 290px;
+          flex-grow: 1;
+          @media(max-width: 575px){
+            max-width: unset;
+            .ant-input{
+              font-size: 16px;
+            }
+          }
+          .ant-input{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
